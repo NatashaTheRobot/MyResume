@@ -75,31 +75,6 @@
             </objects>
             <point key="canvasLocation" x="1085" y="131"/>
         </scene>
-        <!--Table View Controller - Contact-->
-        <scene sceneID="N9C-ud-4z1">
-            <objects>
-                <tableViewController id="B0s-fw-Kox" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="pS6-3Y-lOB">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="x4v-gz-1qe">
-                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="x4v-gz-1qe" id="IMM-Pq-XOq">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Contact" id="hsk-ch-9tp"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="RM6-VY-woL" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1085" y="903"/>
-        </scene>
         <!--Navigation Controller - Contact-->
         <scene sceneID="Blf-4u-edx">
             <objects>
@@ -109,12 +84,69 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="B0s-fw-Kox" kind="relationship" relationship="rootViewController" id="8yq-sc-qC1"/>
+                        <segue destination="rwt-fh-SEH" kind="relationship" relationship="rootViewController" id="NyU-3T-kSC"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GAa-hQ-6iW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="551" y="903"/>
+            <point key="canvasLocation" x="551" y="875"/>
+        </scene>
+        <!--Contact Me View Controller - Contact Me-->
+        <scene sceneID="ihJ-2A-LsC">
+            <objects>
+                <viewController id="rwt-fh-SEH" customClass="ContactMeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0zz-Pc-r0v"/>
+                        <viewControllerLayoutGuide type="bottom" id="M3e-zQ-n7B"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yu0-cS-9vO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Waw-LH-FLg">
+                                <rect key="frame" x="20" y="100" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4ED-G4-eme">
+                                <rect key="frame" x="20" y="138" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" text="Hi Natasha, " translatesAutoresizingMaskIntoConstraints="NO" id="V7P-up-0Dw">
+                                <rect key="frame" x="20" y="176" width="280" height="154"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Contact Me" id="GGH-M6-zQn">
+                        <barButtonItem key="leftBarButtonItem" title="Clear" id="XD7-Mx-8Zf">
+                            <connections>
+                                <action selector="onClearButtonTap:" destination="rwt-fh-SEH" id="IdK-qT-wJ8"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Send" style="done" id="kLS-hF-2Tm">
+                            <connections>
+                                <action selector="onSendButtonTap:" destination="rwt-fh-SEH" id="HNh-XS-bhR"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="emailTextField" destination="4ED-G4-eme" id="04V-Qi-IuM"/>
+                        <outlet property="messageTextView" destination="V7P-up-0Dw" id="q8m-zI-bgx"/>
+                        <outlet property="nameTextField" destination="Waw-LH-FLg" id="twn-8c-pv4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5nM-3x-uR8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1085" y="875"/>
         </scene>
         <!--Navigation Controller - Projects-->
         <scene sceneID="TBk-PV-ZU4">
