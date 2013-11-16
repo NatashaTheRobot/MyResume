@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  SocialLinksViewController.h
 //  MyResume
 //
 //  Created by Natasha Murashev on 11/16/13.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface SocialLinksViewController : UITableViewController
 
 @end

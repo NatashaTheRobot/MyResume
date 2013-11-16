@@ -14,13 +14,14 @@
 		9C69882A1837B50E00B8D7FC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C6988291837B50E00B8D7FC /* main.m */; };
 		9C69882E1837B50E00B8D7FC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C69882D1837B50E00B8D7FC /* AppDelegate.m */; };
 		9C6988311837B50E00B8D7FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C69882F1837B50E00B8D7FC /* Main.storyboard */; };
-		9C6988341837B50E00B8D7FC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C6988331837B50E00B8D7FC /* ViewController.m */; };
 		9C6988361837B50E00B8D7FC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C6988351837B50E00B8D7FC /* Images.xcassets */; };
 		9C69883D1837B50E00B8D7FC /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C69883C1837B50E00B8D7FC /* XCTest.framework */; };
 		9C69883E1837B50E00B8D7FC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C69881D1837B50E00B8D7FC /* Foundation.framework */; };
 		9C69883F1837B50E00B8D7FC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C6988211837B50E00B8D7FC /* UIKit.framework */; };
 		9C6988471837B50E00B8D7FC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9C6988451837B50E00B8D7FC /* InfoPlist.strings */; };
 		9C6988491837B50E00B8D7FC /* MyResumeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C6988481837B50E00B8D7FC /* MyResumeTests.m */; };
+		9C6988551837DA6000B8D7FC /* SocialLinksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C6988541837DA6000B8D7FC /* SocialLinksViewController.m */; };
+		9C6988581837E33700B8D7FC /* SocialWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C6988571837E33700B8D7FC /* SocialWebViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,14 +46,16 @@
 		9C69882C1837B50E00B8D7FC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9C69882D1837B50E00B8D7FC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		9C6988301837B50E00B8D7FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		9C6988321837B50E00B8D7FC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		9C6988331837B50E00B8D7FC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		9C6988351837B50E00B8D7FC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		9C69883B1837B50E00B8D7FC /* MyResumeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyResumeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C69883C1837B50E00B8D7FC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		9C6988441837B50E00B8D7FC /* MyResumeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MyResumeTests-Info.plist"; sourceTree = "<group>"; };
 		9C6988461837B50E00B8D7FC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9C6988481837B50E00B8D7FC /* MyResumeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyResumeTests.m; sourceTree = "<group>"; };
+		9C6988531837DA6000B8D7FC /* SocialLinksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocialLinksViewController.h; sourceTree = "<group>"; };
+		9C6988541837DA6000B8D7FC /* SocialLinksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocialLinksViewController.m; sourceTree = "<group>"; };
+		9C6988561837E33700B8D7FC /* SocialWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocialWebViewController.h; sourceTree = "<group>"; };
+		9C6988571837E33700B8D7FC /* SocialWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocialWebViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,8 +118,7 @@
 				9C69882C1837B50E00B8D7FC /* AppDelegate.h */,
 				9C69882D1837B50E00B8D7FC /* AppDelegate.m */,
 				9C69882F1837B50E00B8D7FC /* Main.storyboard */,
-				9C6988321837B50E00B8D7FC /* ViewController.h */,
-				9C6988331837B50E00B8D7FC /* ViewController.m */,
+				9C6988521837D4E400B8D7FC /* ViewControllers */,
 				9C6988351837B50E00B8D7FC /* Images.xcassets */,
 				9C6988241837B50E00B8D7FC /* Supporting Files */,
 			);
@@ -150,6 +152,17 @@
 				9C6988451837B50E00B8D7FC /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9C6988521837D4E400B8D7FC /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				9C6988531837DA6000B8D7FC /* SocialLinksViewController.h */,
+				9C6988541837DA6000B8D7FC /* SocialLinksViewController.m */,
+				9C6988561837E33700B8D7FC /* SocialWebViewController.h */,
+				9C6988571837E33700B8D7FC /* SocialWebViewController.m */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,7 +262,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C6988341837B50E00B8D7FC /* ViewController.m in Sources */,
+				9C6988581837E33700B8D7FC /* SocialWebViewController.m in Sources */,
+				9C6988551837DA6000B8D7FC /* SocialLinksViewController.m in Sources */,
 				9C69882E1837B50E00B8D7FC /* AppDelegate.m in Sources */,
 				9C69882A1837B50E00B8D7FC /* main.m in Sources */,
 			);

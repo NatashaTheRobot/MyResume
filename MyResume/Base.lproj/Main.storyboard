@@ -50,7 +50,7 @@
             </objects>
             <point key="canvasLocation" x="1070" y="-1338"/>
         </scene>
-        <!--Table View Controller - Root View Controller-->
+        <!--Table View Controller - Projects-->
         <scene sceneID="ZAu-vZ-3Iu">
             <objects>
                 <tableViewController id="0M5-Bg-SOg" sceneMemberID="viewController">
@@ -69,13 +69,13 @@
                             </tableViewCell>
                         </prototypes>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="acd-N7-LUZ"/>
+                    <navigationItem key="navigationItem" title="Projects" id="acd-N7-LUZ"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V2n-3u-Oc7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1085" y="131"/>
         </scene>
-        <!--Table View Controller - Root View Controller-->
+        <!--Table View Controller - Contact-->
         <scene sceneID="N9C-ud-4z1">
             <objects>
                 <tableViewController id="B0s-fw-Kox" sceneMemberID="viewController">
@@ -94,7 +94,7 @@
                             </tableViewCell>
                         </prototypes>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="hsk-ch-9tp"/>
+                    <navigationItem key="navigationItem" title="Contact" id="hsk-ch-9tp"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RM6-VY-woL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -132,22 +132,38 @@
             </objects>
             <point key="canvasLocation" x="551" y="131"/>
         </scene>
-        <!--Table View Controller - Social Links-->
+        <!--Social Links View Controller - Social Links-->
         <scene sceneID="2ms-9L-tBv">
             <objects>
-                <tableViewController id="9AO-Le-8UM" sceneMemberID="viewController">
+                <tableViewController id="9AO-Le-8UM" customClass="SocialLinksViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="sOO-vK-446">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="qYB-Vj-cH7">
+                            <tableViewCell contentMode="scaleAspectFit" selectionStyle="gray" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="socialCell" textLabel="gMJ-eq-0bQ" imageView="3fA-CU-abO" style="IBUITableViewCellStyleDefault" id="qYB-Vj-cH7">
                                 <rect key="frame" x="0.0" y="86" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qYB-Vj-cH7" id="L1j-bz-tt5">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="LinkedIn" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gMJ-eq-0bQ">
+                                            <rect key="frame" x="55" y="0.0" width="230" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="LinkedIn" id="3fA-CU-abO">
+                                            <rect key="frame" x="15" y="9" width="25" height="25"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </imageView>
+                                    </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="xvf-n5-G0P" kind="push" id="n7h-hL-DLQ"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                     </tableView>
@@ -156,6 +172,40 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jsf-XX-0ws" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1070" y="-576"/>
+        </scene>
+        <!--Social Web View Controller-->
+        <scene sceneID="b5T-l2-8dQ">
+            <objects>
+                <viewController id="xvf-n5-G0P" customClass="SocialWebViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="p9m-XZ-G3e"/>
+                        <viewControllerLayoutGuide type="bottom" id="bcW-Hs-Bc6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VfO-31-drd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TWa-9P-P6p">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="1Jf-ZB-TGv">
+                                <rect key="frame" x="150" y="274" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="D7J-O3-QHE"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="1Jf-ZB-TGv" id="Bg0-l5-chy"/>
+                        <outlet property="webView" destination="TWa-9P-P6p" id="Uxb-Al-e4E"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7JE-te-GYj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1451" y="-577"/>
         </scene>
         <!--Navigation Controller - Social Links-->
         <scene sceneID="GOG-am-TVA">
@@ -191,6 +241,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="LinkedIn" width="25" height="25"/>
         <image name="tabBarIconCompose" width="25" height="25"/>
         <image name="tabBarIconFemaileProfile" width="25" height="25"/>
         <image name="tabBarIconLinks" width="25" height="25"/>
