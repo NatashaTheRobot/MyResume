@@ -28,7 +28,7 @@
 
 - (IBAction)onSendButtonTap:(id)sender
 {
-    sendgrid *sendgridMessage = [sendgrid user:@"natashaGA" andPass:@"GeneralAssemblySF1"];
+    sendgrid *sendgridMessage = [sendgrid user:@"nmurashev@gmail.com" andPass:@"lollypop1"];
     sendgridMessage.to = self.emailTextField.text;
     sendgridMessage.from = @"natasha@natashatherobot.com";
     sendgridMessage.subject = @"Contact From My Resume App";
