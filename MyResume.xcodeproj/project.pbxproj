@@ -36,6 +36,8 @@
 		9C6988801837FAF400B8D7FC /* ProjectViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C69887F1837FAF400B8D7FC /* ProjectViewCell.m */; };
 		9C6988841837FC8F00B8D7FC /* ProjectsCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C6988831837FC8F00B8D7FC /* ProjectsCollectionViewController.m */; };
 		9C6988871837FCCB00B8D7FC /* ProjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C6988861837FCCB00B8D7FC /* ProjectViewController.m */; };
+		9C69888A18390CA200B8D7FC /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C69888918390CA200B8D7FC /* AboutViewController.m */; };
+		9C69888C183912C300B8D7FC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C69888B183912C300B8D7FC /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +101,9 @@
 		9C6988831837FC8F00B8D7FC /* ProjectsCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectsCollectionViewController.m; sourceTree = "<group>"; };
 		9C6988851837FCCB00B8D7FC /* ProjectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectViewController.h; sourceTree = "<group>"; };
 		9C6988861837FCCB00B8D7FC /* ProjectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectViewController.m; sourceTree = "<group>"; };
+		9C69888818390CA200B8D7FC /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		9C69888918390CA200B8D7FC /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		9C69888B183912C300B8D7FC /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +111,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C69888C183912C300B8D7FC /* QuartzCore.framework in Frameworks */,
 				9C6988201837B50E00B8D7FC /* CoreGraphics.framework in Frameworks */,
 				9C6988221837B50E00B8D7FC /* UIKit.framework in Frameworks */,
 				9C69881E1837B50E00B8D7FC /* Foundation.framework in Frameworks */,
@@ -148,6 +154,7 @@
 		9C69881C1837B50E00B8D7FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9C69888B183912C300B8D7FC /* QuartzCore.framework */,
 				9C69881D1837B50E00B8D7FC /* Foundation.framework */,
 				9C69881F1837B50E00B8D7FC /* CoreGraphics.framework */,
 				9C6988211837B50E00B8D7FC /* UIKit.framework */,
@@ -202,6 +209,8 @@
 		9C6988521837D4E400B8D7FC /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				9C69888818390CA200B8D7FC /* AboutViewController.h */,
+				9C69888918390CA200B8D7FC /* AboutViewController.m */,
 				9C6988531837DA6000B8D7FC /* SocialLinksViewController.h */,
 				9C6988541837DA6000B8D7FC /* SocialLinksViewController.m */,
 				9C6988561837E33700B8D7FC /* SocialWebViewController.h */,
@@ -380,6 +389,7 @@
 				9C69882E1837B50E00B8D7FC /* AppDelegate.m in Sources */,
 				9C6988731837EBBE00B8D7FC /* AFHTTPRequestOperationManager.m in Sources */,
 				9C6988761837EBBE00B8D7FC /* AFSecurityPolicy.m in Sources */,
+				9C69888A18390CA200B8D7FC /* AboutViewController.m in Sources */,
 				9C69882A1837B50E00B8D7FC /* main.m in Sources */,
 				9C69885D1837EB8500B8D7FC /* sendgrid.m in Sources */,
 				9C6988801837FAF400B8D7FC /* ProjectViewCell.m in Sources */,
