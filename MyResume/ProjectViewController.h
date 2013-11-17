@@ -10,4 +10,7 @@
 
 @interface ProjectViewController : UIViewController
 
+@property (strong, nonatomic) NSString *projectName;
+@property (strong, nonatomic) NSString *projectURL;
+
 @end

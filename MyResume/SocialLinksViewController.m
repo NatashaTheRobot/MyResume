@@ -22,8 +22,9 @@
 {
     [super viewDidLoad];
     
-    self.socialServices = @[@"LinkedIn", @"Facebook", @"Twitter", @"Github"];
-    self.socialURLs = @[@"http://www.linkedin.com/in/natashatherobot",
+    self.socialServices = @[@"Blog", @"LinkedIn", @"Facebook", @"Twitter", @"Github"];
+    self.socialURLs = @[@"http://natashatherobot.com/",
+                        @"http://www.linkedin.com/in/natashatherobot",
                         @"https://www.facebook.com/natasha.murashev",
                         @"https://twitter.com/NatashaTheRobot",
                         @"https://github.com/natashatherobot"];

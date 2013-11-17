@@ -28,6 +28,7 @@
     NSURL *url = [NSURL URLWithString:self.socialURL];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     self.webView.delegate = self;
+    self.webView.scalesPageToFit = YES;
     [self.webView loadRequest:request];
 }
 

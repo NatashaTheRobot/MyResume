@@ -8,9 +8,10 @@
 
 #import "ProjectViewController.h"
 
-@interface ProjectViewController ()
+@interface ProjectViewController () <UIWebViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
 
 @end
 
@@ -20,6 +21,21 @@
 {
     [super viewDidLoad];
     
+    self.title = self.projectName;
+    [self.activityIndicator startAnimating];
+    
+    NSURL *projectURL = [NSURL URLWithString:self.projectURL];
+    NSURLRequest *projectRequest = [NSURLRequest requestWithURL:projectURL];
+    self.webView.scalesPageToFit = YES;
+    self.webView.delegate = self;
+    [self.webView loadRequest:projectRequest];
+}
+
+#pragma mark - WebViewDelegate Methods
+
+- (void)webViewDidFinishLoad:(UIWebView *)webView
+{
+    [self.activityIndicator stopAnimating];
 }
 
 @end

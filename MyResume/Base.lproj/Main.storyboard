@@ -65,7 +65,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" text="Hi Natasha, " translatesAutoresizingMaskIntoConstraints="NO" id="V7P-up-0Dw">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" text="Hi Natasha, " translatesAutoresizingMaskIntoConstraints="NO" id="V7P-up-0Dw">
                                 <rect key="frame" x="20" y="176" width="280" height="154"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
@@ -186,11 +186,16 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </webView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="13i-qq-QVo">
+                                <rect key="frame" x="150" y="274" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="hDb-xn-M8w"/>
                     <connections>
+                        <outlet property="activityIndicator" destination="13i-qq-QVo" id="gIM-A0-q6R"/>
                         <outlet property="webView" destination="fdo-7U-jof" id="GTp-hS-YTL"/>
                     </connections>
                 </viewController>
@@ -305,7 +310,7 @@
             </objects>
             <point key="canvasLocation" x="551" y="-1338"/>
         </scene>
-        <!--View Controller - About Me-->
+        <!--View Controller - Natasha-->
         <scene sceneID="ji0-rL-fp7">
             <objects>
                 <viewController id="WCK-SC-xdw" sceneMemberID="viewController">
@@ -330,7 +335,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="About Me" id="Xck-DP-FHr"/>
+                    <navigationItem key="navigationItem" title="Natasha" id="Xck-DP-FHr"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HE6-7p-kM4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
