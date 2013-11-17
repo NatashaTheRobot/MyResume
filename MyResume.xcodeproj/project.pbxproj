@@ -33,6 +33,9 @@
 		9C6988791837EBBE00B8D7FC /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C69886F1837EBBE00B8D7FC /* AFURLResponseSerialization.m */; };
 		9C69887A1837EBBE00B8D7FC /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C6988711837EBBE00B8D7FC /* AFURLSessionManager.m */; };
 		9C69887D1837EEB600B8D7FC /* ContactMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C69887C1837EEB600B8D7FC /* ContactMeViewController.m */; };
+		9C6988801837FAF400B8D7FC /* ProjectViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C69887F1837FAF400B8D7FC /* ProjectViewCell.m */; };
+		9C6988841837FC8F00B8D7FC /* ProjectsCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C6988831837FC8F00B8D7FC /* ProjectsCollectionViewController.m */; };
+		9C6988871837FCCB00B8D7FC /* ProjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C6988861837FCCB00B8D7FC /* ProjectViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +93,12 @@
 		9C6988711837EBBE00B8D7FC /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
 		9C69887B1837EEB600B8D7FC /* ContactMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactMeViewController.h; sourceTree = "<group>"; };
 		9C69887C1837EEB600B8D7FC /* ContactMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactMeViewController.m; sourceTree = "<group>"; };
+		9C69887E1837FAF300B8D7FC /* ProjectViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectViewCell.h; sourceTree = "<group>"; };
+		9C69887F1837FAF400B8D7FC /* ProjectViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectViewCell.m; sourceTree = "<group>"; };
+		9C6988821837FC8F00B8D7FC /* ProjectsCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectsCollectionViewController.h; sourceTree = "<group>"; };
+		9C6988831837FC8F00B8D7FC /* ProjectsCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectsCollectionViewController.m; sourceTree = "<group>"; };
+		9C6988851837FCCB00B8D7FC /* ProjectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectViewController.h; sourceTree = "<group>"; };
+		9C6988861837FCCB00B8D7FC /* ProjectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +163,7 @@
 				9C69882D1837B50E00B8D7FC /* AppDelegate.m */,
 				9C69882F1837B50E00B8D7FC /* Main.storyboard */,
 				9C6988521837D4E400B8D7FC /* ViewControllers */,
+				9C6988811837FAFA00B8D7FC /* Views */,
 				9C6988351837B50E00B8D7FC /* Images.xcassets */,
 				9C6988241837B50E00B8D7FC /* Supporting Files */,
 			);
@@ -198,6 +208,10 @@
 				9C6988571837E33700B8D7FC /* SocialWebViewController.m */,
 				9C69887B1837EEB600B8D7FC /* ContactMeViewController.h */,
 				9C69887C1837EEB600B8D7FC /* ContactMeViewController.m */,
+				9C6988821837FC8F00B8D7FC /* ProjectsCollectionViewController.h */,
+				9C6988831837FC8F00B8D7FC /* ProjectsCollectionViewController.m */,
+				9C6988851837FCCB00B8D7FC /* ProjectViewController.h */,
+				9C6988861837FCCB00B8D7FC /* ProjectViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -245,6 +259,15 @@
 				9C6988711837EBBE00B8D7FC /* AFURLSessionManager.m */,
 			);
 			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		9C6988811837FAFA00B8D7FC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9C69887E1837FAF300B8D7FC /* ProjectViewCell.h */,
+				9C69887F1837FAF400B8D7FC /* ProjectViewCell.m */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -345,6 +368,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C69887D1837EEB600B8D7FC /* ContactMeViewController.m in Sources */,
+				9C6988841837FC8F00B8D7FC /* ProjectsCollectionViewController.m in Sources */,
 				9C6988771837EBBE00B8D7FC /* AFURLConnectionOperation.m in Sources */,
 				9C6988721837EBBE00B8D7FC /* AFHTTPRequestOperation.m in Sources */,
 				9C6988751837EBBE00B8D7FC /* AFNetworkReachabilityManager.m in Sources */,
@@ -358,6 +382,8 @@
 				9C6988761837EBBE00B8D7FC /* AFSecurityPolicy.m in Sources */,
 				9C69882A1837B50E00B8D7FC /* main.m in Sources */,
 				9C69885D1837EB8500B8D7FC /* sendgrid.m in Sources */,
+				9C6988801837FAF400B8D7FC /* ProjectViewCell.m in Sources */,
+				9C6988871837FCCB00B8D7FC /* ProjectViewController.m in Sources */,
 				9C6988741837EBBE00B8D7FC /* AFHTTPSessionManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

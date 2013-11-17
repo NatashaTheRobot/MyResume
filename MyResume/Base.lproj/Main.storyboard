@@ -50,31 +50,6 @@
             </objects>
             <point key="canvasLocation" x="1070" y="-1338"/>
         </scene>
-        <!--Table View Controller - Projects-->
-        <scene sceneID="ZAu-vZ-3Iu">
-            <objects>
-                <tableViewController id="0M5-Bg-SOg" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="0s0-4L-aYs">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="VFq-Fm-4Px">
-                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="VFq-Fm-4Px" id="rRp-px-xEG">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Projects" id="acd-N7-LUZ"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="V2n-3u-Oc7" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1085" y="131"/>
-        </scene>
         <!--Navigation Controller - Contact-->
         <scene sceneID="Blf-4u-edx">
             <objects>
@@ -157,12 +132,96 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="0M5-Bg-SOg" kind="relationship" relationship="rootViewController" id="CcM-jZ-kiG"/>
+                        <segue destination="Ii3-Ex-406" kind="relationship" relationship="rootViewController" id="0Ib-90-Vq6"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lbq-Md-mmn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="551" y="131"/>
+        </scene>
+        <!--Projects Collection View Controller - My Projects-->
+        <scene sceneID="jTf-dH-tRz">
+            <objects>
+                <collectionViewController autoresizesArchivedViewToFullSize="NO" id="Ii3-Ex-406" customClass="ProjectsCollectionViewController" sceneMemberID="viewController">
+                    <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="2JT-LW-r1w">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Gsf-co-F0j">
+                            <size key="itemSize" width="145" height="145"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="projectCell" id="Dhg-ix-fbX" customClass="ProjectViewCell">
+                                <rect key="frame" x="10" y="74" width="145" height="145"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="145" height="145"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gVO-Pz-ui4">
+                                            <rect key="frame" x="0.0" y="0.0" width="145" height="145"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ShopLater" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="80" translatesAutoresizingMaskIntoConstraints="NO" id="kIf-Gg-rlQ">
+                                            <rect key="frame" x="0.0" y="0.0" width="80" height="22"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <connections>
+                                    <outlet property="imageView" destination="gVO-Pz-ui4" id="8OI-E5-A8Z"/>
+                                    <outlet property="label" destination="kIf-Gg-rlQ" id="FaY-fI-F6b"/>
+                                    <segue destination="UPJ-F8-xDF" kind="push" id="ifP-9D-idz"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="Ii3-Ex-406" id="6WN-J9-530"/>
+                            <outlet property="delegate" destination="Ii3-Ex-406" id="rMo-Tv-era"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" title="My Projects" id="6Q3-yN-yeF"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dd4-XW-tuq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1099" y="131"/>
+        </scene>
+        <!--Project View Controller-->
+        <scene sceneID="UGL-wZ-PgG">
+            <objects>
+                <viewController id="UPJ-F8-xDF" customClass="ProjectViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XWl-L8-q0O"/>
+                        <viewControllerLayoutGuide type="bottom" id="1gs-rG-3gG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8YD-T4-eU4">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fdo-7U-jof">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="hDb-xn-M8w"/>
+                    <connections>
+                        <outlet property="webView" destination="fdo-7U-jof" id="GTp-hS-YTL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xJ9-HM-H2E" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1474" y="130"/>
         </scene>
         <!--Social Links View Controller - Social Links-->
         <scene sceneID="2ms-9L-tBv">
