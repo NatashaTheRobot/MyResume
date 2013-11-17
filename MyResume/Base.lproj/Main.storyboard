@@ -15,7 +15,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="T1d-pf-J9y" kind="relationship" relationship="viewControllers" id="HQO-Zc-n80"/>
+                        <segue destination="WCK-SC-xdw" kind="relationship" relationship="viewControllers" id="TCz-aw-1P7"/>
                         <segue destination="HSe-6E-v1O" kind="relationship" relationship="viewControllers" id="CT4-QI-d5a"/>
                         <segue destination="xmc-uu-3s7" kind="relationship" relationship="viewControllers" id="Ole-6w-nCO"/>
                         <segue destination="eUm-Hu-f05" kind="relationship" relationship="viewControllers" id="RQS-sJ-GAo"/>
@@ -282,22 +282,6 @@
             </objects>
             <point key="canvasLocation" x="551" y="-576"/>
         </scene>
-        <!--Navigation Controller - About-->
-        <scene sceneID="8iH-8D-oo5">
-            <objects>
-                <navigationController definesPresentationContext="YES" id="T1d-pf-J9y" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="About" image="tabBarIconFemaileProfile" id="svD-Ha-K9e"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="079-kX-QBw">
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="WCK-SC-xdw" kind="relationship" relationship="rootViewController" id="9op-1i-swW"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="nzP-LW-naV" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="551" y="-1338"/>
-        </scene>
         <!--About View Controller - About Me-->
         <scene sceneID="ji0-rL-fp7">
             <objects>
@@ -365,6 +349,7 @@ Natasha currently has three apps in the Apple’s app store - ShopLater, Alphavi
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="About Me" image="tabBarIconFemaileProfile" id="iS6-ru-H3x"/>
                     <navigationItem key="navigationItem" title="About Me" id="Xck-DP-FHr"/>
                     <connections>
                         <outlet property="backgroundImageView" destination="Zkz-yJ-JOt" id="de0-Tz-wYy"/>
@@ -375,7 +360,7 @@ Natasha currently has three apps in the Apple’s app store - ShopLater, Alphavi
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HE6-7p-kM4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1067" y="-1336"/>
+            <point key="canvasLocation" x="551" y="-1283"/>
         </scene>
     </scenes>
     <resources>
